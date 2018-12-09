@@ -34,13 +34,19 @@ function topFunction() {
   document.documentElement.scrollTop = 0;
 }
 
-// ===== Nav Bar Active Link =====
+// ===== Nav Bar =====
 
 // Active link
+$(document).ready(function () {
+    $('#menu a').on("click", function () {
+        $(this).parent().siblings().find("a").removeClass('active');
+        $(this).addClass('active');
+    });
+});
 
 
 // Hamburger menu toggle
-$(document).ready(function() {
+!$(document).ready(function() {
   $(".navbar-nav li a").click(function(event) {
     $(".navbar-collapse").collapse('hide');
   });

@@ -9,9 +9,9 @@
 
 html{scroll-behavior: smooth;}
 body{background-color:#f4f2ed;font-family: 'Lato',sans-serif;}
-h1,h2,h3,h4,h5,h6{margin:0;padding:40px 0;font-family: 'Noto Serif', serif;}
-h2{font-size: 44px;}
-section{text-align:center;margin:0;padding:20px 0;}
+h1,h2,h3,h4,h5,h6{margin:0;padding:0;font-family: 'Noto Serif', serif;}
+h2{font-size: 44px;padding:25px 0 30px 0;}
+section{text-align:center;margin:0;padding:20px;}
 section:nth-child(3){padding:0;}
 section:nth-child(odd){background-color:#f5cacc;}
 footer{text-align:center;padding:20px 0;color:#a64930;}
@@ -20,10 +20,10 @@ footer{text-align:center;padding:20px 0;color:#a64930;}
 .bg-nav{background-color:rgba(244, 242, 237,0.9);}
 .custom-toggler .navbar-toggler-icon {background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(166, 73, 48)' stroke-width='4.5' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");}
 .custom-toggler.navbar-toggler {border-color: rgb(166, 73, 48);}
-.btn{background-color:#f46078;margin:40px 0;padding:15px 45px;border-radius:0;color:#ffffff;}
+.btn{background-color:#f46078;margin:7px;padding:15px 45px;border-radius:0;color:#ffffff;}
 .btn:hover{background-color:#ffffff;color:#f46078;}
 .heroimg{background:url(images/heroimg_001.jpg);background-position: center;background-repeat: no-repeat;background-size: cover;position: relative;background-attachment: fixed;width: auto;height: 920px;}
-.section-logo{height: auto;margin:0;padding:0;}
+.section-logo{max-width:100%;margin:auto;padding:auto;}
 .img-pods-story .col-md-6{background-size:cover}
 .img-pods-story .col-sm-12{background-size:cover}
 .img-pods-story .col-md-6:nth-child(1),
@@ -67,22 +67,21 @@ footer{text-align:center;padding:20px 0;color:#a64930;}
   color:#a64930;
 }
 
-/* Media Sizes */
+/* Media Queries */
 @media (min-width: 290px){
     .spacer{display:block;height:300px}
-    .section-logo{padding-top: 30px;}
-    .footerhr{width: 240px;}
+    .footerhr{width: 240px}
+    .section-logo{max-height:250px;}
 }
-@media (min-width: 405px){
+@media (min-width: 511px){
      section{padding:40px}
     .ourstory{text-align:center;padding:40px;}
-    .section-logo{padding-top: 80px;}
+    .section-logo{max-height:300px;}
     .images-first .row div:nth-child(1){order:1}
     .images-first .row div:nth-child(2){order:2}
 }
 @media (min-width: 1024px){
      section{padding:60px}
-     .section-logo{padding:0;}
      .ourstory{text-align:center;padding:60px;}
      .footerhr{width: 640px;}
 }
