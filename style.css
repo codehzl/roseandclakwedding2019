@@ -82,7 +82,7 @@ footer{text-align:center;padding:20px 0;color:#a64930;}
 }
 @media (min-width: 1024px){
      section{padding:60px}
-    .section-logo{max-height:400px;}
+     .section-logo{max-height:400px;}
      .ourstory{text-align:center;padding:60px;}
      .footerhr{width: 640px;}
 }
